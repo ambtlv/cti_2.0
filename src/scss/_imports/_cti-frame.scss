@@ -1,4 +1,6 @@
-// CTI Frame
+// --------------------------------------------------------------
+// ## GLOBAL CTI FRAME
+// --------------------------------------------------------------
 
 .nattbx__cti-frame {
 	display: flex;
@@ -7,11 +9,22 @@
     left: $s_lg;
     width: 460px;
 	height: 460px;
-    padding-right: $s_lg;
-	padding-left: $s_lg;
     background: $nattbx_white;
     box-shadow: 0 -1px 4px 0 #a8b7c7;
     border-top-right-radius: $border;
     border-top-left-radius: $border;
     z-index: 3;
+
+	& .slds-icon {
+		width: 15px;
+		height: 15px;
+		fill: $nattbx_hgrey;
+	}
+}
+.slds-panel__header-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: $s_md;
+	color: $nattbx_hgrey;
 }

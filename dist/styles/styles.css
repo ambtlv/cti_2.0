@@ -19205,6 +19205,10 @@ body, html {
   -webkit-box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.16);
   z-index: 4; }
+  .salesforce__utility-bar .slds-icon {
+    width: 15px;
+    height: 15px;
+    fill: #49535c; }
 
 .salesforce__utility-cta {
   display: -webkit-box;
@@ -19223,7 +19227,9 @@ body, html {
   border-bottom: 3px solid #2e749c; }
 
 .salesforce__utility-cta-text {
-  font-weight: 700; }
+  margin-left: 0.5rem;
+  font-weight: 700;
+  color: #49535c; }
 
 .nattbx__cti-frame {
   display: -webkit-box;
@@ -19234,11 +19240,27 @@ body, html {
   left: 1.25rem;
   width: 460px;
   height: 460px;
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
   background: white;
   -webkit-box-shadow: 0 -1px 4px 0 #a8b7c7;
           box-shadow: 0 -1px 4px 0 #a8b7c7;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
   z-index: 3; }
+  .nattbx__cti-frame .slds-icon {
+    width: 15px;
+    height: 15px;
+    fill: #49535c; }
+
+.slds-panel__header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.625rem;
+  color: #49535c; }
