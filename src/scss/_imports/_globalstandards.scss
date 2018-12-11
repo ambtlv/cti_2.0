@@ -9,7 +9,7 @@ $nattbx_hgrey:   rgb(73,83,92);
 $nattbx_dgrey:   rgb(92,103,112);
 $nattbx_mgrey:   rgb(173,179,183);
 $nattbx_lgrey:   rgb(247,247,247);
-$nattbx_white:   rgb(225,225,225);
+$nattbx_white:   rgb(255,255,255);
 $nattbx_teal:    rgb(100,204,201);
 
 
@@ -17,7 +17,8 @@ $nattbx_teal:    rgb(100,204,201);
 $global-margin: 20px;
 
 // Widths
-$global-width-constant: 450px;
+$global-width-constant: 	1292px;
+$global-width-constant-cti: 450px;
 
 // Border Radius
 $border: 4px;

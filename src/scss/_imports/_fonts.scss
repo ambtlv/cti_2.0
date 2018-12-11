@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+$global_font: 		   		'Poppins' !default;
+$global_headings_font: 		'Montserrat' !default;
+$global_size_font: 			12px; // Regular
+$global_size_headings: 		16px; // Regular
+$global_size_headings_lg: 	20px; // Large
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+	font-family: $global_headings_font;
+	font-size: $global_size_headings;
+}

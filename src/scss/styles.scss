@@ -1,11 +1,14 @@
 body, html {margin: 0; padding: 0; height: 100%;}
 
+// Vendor imports
+@import 'vendor/salesforce-lightning-design-system.min';
+
 // Standards
 @import '_imports/_fonts';
 @import '_imports/_globalstandards';
 
 // Spacings
-// @import '_imports/_spaces';
+@import '_imports/_spaces';
 
 //components
 @import '_imports/_buttons';
@@ -13,3 +16,4 @@ body, html {margin: 0; padding: 0; height: 100%;}
 // Layouts
 // @import '_imports/_header';
 @import '_imports/_layout';
+@import '_imports/_cti-frame';

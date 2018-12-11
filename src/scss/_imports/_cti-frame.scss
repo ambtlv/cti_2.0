@@ -1,0 +1,17 @@
+// CTI Frame
+
+.nattbx__cti-frame {
+	display: flex;
+    position: fixed;
+    bottom: 3.5rem;
+    left: $s_lg;
+    width: 460px;
+	height: 460px;
+    padding-right: $s_lg;
+	padding-left: $s_lg;
+    background: $nattbx_white;
+    box-shadow: 0 -1px 4px 0 #a8b7c7;
+    border-top-right-radius: $border;
+    border-top-left-radius: $border;
+    z-index: 3;
+}

@@ -1,8 +1,39 @@
 // GLOBAL LAYOUT
 
 body, html {
-	// font-family: $globalFont;
-	// font-size: $globalFontSize;
+	font-family: $global_font;
+	font-size: $global_size_font;
 	color: $nattbx_dgrey;
-	background: $nattbx_white
+	background: #b3c5de;
+}
+.salesforce {
+	max-width: $global-width-constant;
+	margin-right: auto;
+	margin-left: auto;
+	padding: $s_sm;
+}
+.salesforce__utility-bar {
+	display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    padding-right: $s_lg;
+	padding-left: $s_lg;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.16);
+    z-index: 4;
+}
+.salesforce__utility-cta {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-right: $s_md;
+	padding-left: $s_md;
+	background: rgba(21, 137, 238, 0.1);
+	border-bottom: 3px solid #2e749c;
+}
+.salesforce__utility-cta-text {
+	font-weight: 700;
 }
