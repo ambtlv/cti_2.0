@@ -105,7 +105,7 @@ gulp.task('default', ['clean'], function() {
 
 gulp.task('watch', ['browserSync', 'styles', 'images', 'scripts', 'clean', 'web'], function(){
   gulp.watch('src/scss/**/*.scss', ['styles']);
-  gulp.watch('src/*.html', browserSync.reload);
+  gulp.watch('src/**/**/*.html', browserSync.reload);
   gulp.watch('src/scripts/**/*.js', browserSync.reload);
   gulp.watch('src/imgs/**/*', browserSync.reload);
   console.log('...checked the files, and now I\'m watching them');

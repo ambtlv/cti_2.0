@@ -10,9 +10,10 @@ body, html {
 }
 .salesforce {
 	max-width: $global-width-constant;
+	margin-top: $s_lg;
 	margin-right: auto;
 	margin-left: auto;
-	padding: $s_sm;
+	padding: $s_xs;
 }
 .salesforce__utility-bar {
 	display: flex;
@@ -37,13 +38,13 @@ body, html {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding-right: $s_md;
-	padding-left: $s_md;
+	padding-right: $s_sm;
+	padding-left: $s_sm;
 	background: rgba(21, 137, 238, 0.1);
 	border-bottom: 3px solid #2e749c;
 }
 .salesforce__utility-cta-text {
-	margin-left: $s_sm;
+	margin-left: $s_xs;
 	font-weight: 700;
 	color: $nattbx_hgrey;;
 }

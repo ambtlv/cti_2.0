@@ -2,6 +2,8 @@
 // ## GLOBAL CTI FRAME
 // --------------------------------------------------------------
 
+$nattbx_frame_shadow_col: #a8b7c7 !default;
+
 .nattbx__cti-frame {
 	display: flex;
     position: fixed;
@@ -10,7 +12,7 @@
     width: 460px;
 	height: 460px;
     background: $nattbx_white;
-    box-shadow: 0 -1px 4px 0 #a8b7c7;
+    box-shadow: 0 -1px 4px 0 $nattbx_frame_shadow_col;
     border-top-right-radius: $border;
     border-top-left-radius: $border;
     z-index: 3;
@@ -20,11 +22,34 @@
 		height: 15px;
 		fill: $nattbx_hgrey;
 	}
+
+	& .slds-panel__header {
+		padding: $s_lg;
+	}
 }
 .slds-panel__header-title {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-left: $s_md;
+	margin-left: $s_sm;
 	color: $nattbx_hgrey;
+}
+.slds-panel__header_nattbx {
+	border-bottom: 1px solid $nattbx_green;
+}
+.slds-panel__body_nattbx {
+	width: $global-width-constant-cti;
+	margin: 0 auto;
+	padding: 0;
+}
+.nattbx__left-col, 
+.nattbx__right-col {
+	padding-top: $s_sm;
+}
+.nattbx__left-col {
+	padding-right: $s_xl;
+}
+.nattbx__right-col {
+	height: 419px;
+	border-left: 1px solid $nattbx_lgrey;
 }

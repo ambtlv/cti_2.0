@@ -19186,6 +19186,7 @@ body, html {
 
 .salesforce {
   max-width: 1292px;
+  margin-top: 1.25rem;
   margin-right: auto;
   margin-left: auto;
   padding: 0.5rem; }
@@ -19250,6 +19251,8 @@ body, html {
     width: 15px;
     height: 15px;
     fill: #49535c; }
+  .nattbx__cti-frame .slds-panel__header {
+    padding: 1.25rem; }
 
 .slds-panel__header-title {
   display: -webkit-box;
@@ -19264,3 +19267,40 @@ body, html {
           align-items: center;
   margin-left: 0.625rem;
   color: #49535c; }
+
+.slds-panel__header_nattbx {
+  border-bottom: 1px solid #c4d600; }
+
+.slds-panel__body_nattbx {
+  width: 450px;
+  margin: 0 auto;
+  padding: 0; }
+
+.nattbx__left-col,
+.nattbx__right-col {
+  padding-top: 0.625rem; }
+
+.nattbx__left-col {
+  padding-right: 2.5rem; }
+
+.nattbx__right-col {
+  height: 419px;
+  border-left: 1px solid #eceaea; }
+
+.nattbx__component-navigation {
+  margin-top: 5rem; }
+
+.nattbx__section h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.nattbx__home-screen li {
+  font-size: 1.3rem; }
+  .nattbx__home-screen li a {
+    color: #49535c; }
+  .nattbx__home-screen li a:hover {
+    color: white;
+    text-decoration: none; }
