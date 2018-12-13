@@ -2,6 +2,8 @@
 // ## GLOBAL DIAL PAD
 // --------------------------------------------------------------
 
+$nattbx_frame_shadow_col: #a8b7c7 !default;
+
 .nattbx__dialpad {
 	width: 160px;
 	min-height: 150px;
@@ -33,6 +35,7 @@
 
 		&:hover {
 			background: $nattbx_teal;
+			box-shadow: 0 -1px 4px 0 $nattbx_frame_shadow_col;
 			text-decoration: none;
 		}
 	}
