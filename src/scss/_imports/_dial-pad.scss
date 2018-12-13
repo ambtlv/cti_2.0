@@ -1,0 +1,39 @@
+// --------------------------------------------------------------
+// ## GLOBAL DIAL PAD
+// --------------------------------------------------------------
+
+.nattbx__dialpad {
+	width: 160px;
+	min-height: 150px;
+	margin-top: $s_md;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.nattbx__dialpad-keypad {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+
+	.dialpad-keypad-digit a {
+		display: flex;
+	    flex-direction: column;
+	    justify-content: space-around;
+	    align-items: center;
+		width: 48px;
+		height: 48px;
+		margin-bottom: 4px;
+		border-radius: 50px;
+		background: rgba(100,204,201, 0.1);
+		font-size: 22px;
+		font-weight: 700;
+		color: $nattbx_hgrey;
+		transition: 0.2s ease-in-out;
+
+		&:hover {
+			background: $nattbx_teal;
+			text-decoration: none;
+		}
+	}
+}

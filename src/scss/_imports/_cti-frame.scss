@@ -42,7 +42,7 @@ $nattbx_frame_shadow_col: #a8b7c7 !default;
 	margin: 0 auto;
 	padding: 0;
 }
-.nattbx__left-col, 
+.nattbx__left-col,
 .nattbx__right-col {
 	padding-top: $s_sm;
 }
@@ -50,6 +50,21 @@ $nattbx_frame_shadow_col: #a8b7c7 !default;
 	padding-right: $s_xl;
 }
 .nattbx__right-col {
-	height: 419px;
+	height: 410px;
 	border-left: 1px solid $nattbx_lgrey;
+
+	& .slds-form-element__nattbx-button {
+		width: 150px;
+		margin-top: $s_md;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+.nattbx__branding {
+	@include natterbox-brand;
+
+	width: 140px;
+	margin-top: $s_lg;
+	margin-right: auto;
+	margin-left: auto;
 }

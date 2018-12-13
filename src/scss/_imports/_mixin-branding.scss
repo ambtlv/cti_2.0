@@ -1,0 +1,14 @@
+// --------------------------------------------------------------
+// ## GLOBAL NATTERBOX BRANDING
+// --------------------------------------------------------------
+
+@mixin natterbox-brand {
+	svg {
+		.box-1-2 {
+			fill: $nattbx_green;
+		}
+		.box-2-2 {
+			fill: $nattbx_dgrey;
+		}
+	}
+}

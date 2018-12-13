@@ -19178,6 +19178,70 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
   font-size: 16px; }
 
+.slds-button_nattbx-dial {
+  width: 100%;
+  height: 32px;
+  background: #c4d600;
+  font-weight: 700;
+  color: #49535c; }
+
+.slds-form-element_nattbx-control .slds-form-element__label {
+  visibility: hidden; }
+
+.slds-form-element_nattbx-control .slds-form-element__nattbx-search {
+  width: 160px;
+  margin-top: 0.625rem;
+  margin-right: auto;
+  margin-left: auto; }
+
+.nattbx__dialpad {
+  width: 160px;
+  min-height: 150px;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto; }
+
+.nattbx__dialpad-keypad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .nattbx__dialpad-keypad .dialpad-keypad-digit a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 4px;
+    border-radius: 50px;
+    background: rgba(100, 204, 201, 0.1);
+    font-size: 22px;
+    font-weight: 700;
+    color: #49535c;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+    .nattbx__dialpad-keypad .dialpad-keypad-digit a:hover {
+      background: #64ccc9;
+      text-decoration: none; }
+
 body, html {
   font-family: "Poppins";
   font-size: 12px;
@@ -19272,7 +19336,7 @@ body, html {
   border-bottom: 1px solid #c4d600; }
 
 .slds-panel__body_nattbx {
-  width: 450px;
+  width: 430px;
   margin: 0 auto;
   padding: 0; }
 
@@ -19284,8 +19348,23 @@ body, html {
   padding-right: 2.5rem; }
 
 .nattbx__right-col {
-  height: 419px;
+  height: 410px;
   border-left: 1px solid #eceaea; }
+  .nattbx__right-col .slds-form-element__nattbx-button {
+    width: 150px;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto; }
+
+.nattbx__branding {
+  width: 140px;
+  margin-top: 1.25rem;
+  margin-right: auto;
+  margin-left: auto; }
+  .nattbx__branding svg .box-1-2 {
+    fill: #c4d600; }
+  .nattbx__branding svg .box-2-2 {
+    fill: #5c6770; }
 
 .nattbx__component-navigation {
   margin-top: 5rem; }

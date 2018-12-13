@@ -1,0 +1,17 @@
+// --------------------------------------------------------------
+// ## GLOBAL FORM CONTROL
+// --------------------------------------------------------------
+
+.slds-form-element_nattbx-control { // modifier
+
+	& .slds-form-element__label {
+		visibility: hidden;
+	}
+
+	& .slds-form-element__nattbx-search {
+		width: 160px;
+		margin-top: $s_sm;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
