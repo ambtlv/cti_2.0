@@ -31,12 +31,13 @@ $nattbx_frame_shadow_col: #a8b7c7 !default;
 		font-size: 22px;
 		font-weight: 700;
 		color: $nattbx_hgrey;
-		transition: 0.2s ease-in-out;
 
 		&:hover {
 			background: $nattbx_teal;
 			box-shadow: 0 -1px 4px 0 $nattbx_frame_shadow_col;
 			text-decoration: none;
 		}
+
+		@include link-transitions;
 	}
 }

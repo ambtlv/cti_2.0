@@ -19183,7 +19183,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 32px;
   background: #c4d600;
   font-weight: 700;
-  color: #49535c; }
+  color: #49535c;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
+  .slds-button_nattbx-dial:hover {
+    background: #b4c401;
+    color: white; }
 
 .slds-form-element_nattbx-control .slds-form-element__label {
   visibility: hidden; }
@@ -19191,6 +19196,15 @@ h1, h2, h3, h4, h5, h6 {
 .slds-form-element_nattbx-control .slds-form-element__nattbx-search {
   width: 160px;
   margin-top: 0.625rem;
+  margin-right: auto;
+  margin-left: auto; }
+
+.slds-form-element__nattbx-search .slds-input {
+  height: 32px; }
+
+.nattbx__right-col .slds-form-element__nattbx-button {
+  width: 150px;
+  margin-top: 1rem;
   margin-right: auto;
   margin-left: auto; }
 
@@ -19243,6 +19257,21 @@ h1, h2, h3, h4, h5, h6 {
       -webkit-box-shadow: 0 -1px 4px 0 #a8b7c7;
               box-shadow: 0 -1px 4px 0 #a8b7c7;
       text-decoration: none; }
+
+.nattbx__utility-menu > svg {
+  width: 24px;
+  height: 24px; }
+
+.nattbx__branding {
+  width: 140px;
+  margin-right: auto;
+  margin-left: auto; }
+  .nattbx__branding svg .box-1-2 {
+    fill: #c4d600; }
+  .nattbx__branding svg .box-2-2 {
+    fill: #5c6770; }
+  .nattbx__right-col .nattbx__branding {
+    margin-top: 1.25rem; }
 
 body, html {
   font-family: "Poppins";
@@ -19335,7 +19364,7 @@ body, html {
   color: #49535c; }
 
 .slds-panel__header_nattbx {
-  border-bottom: 1px solid #c4d600; }
+  border-bottom: 2px solid #c4d600; }
 
 .slds-panel__body_nattbx {
   width: 430px;
@@ -19352,21 +19381,6 @@ body, html {
 .nattbx__right-col {
   height: 410px;
   border-left: 1px solid #eceaea; }
-  .nattbx__right-col .slds-form-element__nattbx-button {
-    width: 150px;
-    margin-top: 1rem;
-    margin-right: auto;
-    margin-left: auto; }
-
-.nattbx__branding {
-  width: 140px;
-  margin-top: 1.25rem;
-  margin-right: auto;
-  margin-left: auto; }
-  .nattbx__branding svg .box-1-2 {
-    fill: #c4d600; }
-  .nattbx__branding svg .box-2-2 {
-    fill: #5c6770; }
 
 .nattbx__component-navigation {
   margin-top: 5rem; }

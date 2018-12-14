@@ -35,7 +35,7 @@ $nattbx_frame_shadow_col: #a8b7c7 !default;
 	color: $nattbx_hgrey;
 }
 .slds-panel__header_nattbx {
-	border-bottom: 1px solid $nattbx_green;
+	border-bottom: 2px solid $nattbx_green;
 }
 .slds-panel__body_nattbx {
 	width: $global-width-constant-cti;
@@ -52,19 +52,4 @@ $nattbx_frame_shadow_col: #a8b7c7 !default;
 .nattbx__right-col {
 	height: 410px;
 	border-left: 1px solid $nattbx_lgrey;
-
-	& .slds-form-element__nattbx-button {
-		width: 150px;
-		margin-top: $s_md;
-		margin-right: auto;
-		margin-left: auto;
-	}
-}
-.nattbx__branding {
-	@include natterbox-brand;
-
-	width: 140px;
-	margin-top: $s_lg;
-	margin-right: auto;
-	margin-left: auto;
 }

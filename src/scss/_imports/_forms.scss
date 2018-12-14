@@ -15,3 +15,20 @@
 		margin-left: auto;
 	}
 }
+
+.slds-form-element__nattbx-search { // modifier
+
+	& .slds-input {
+		height: 32px;
+	}
+}
+
+.slds-form-element__nattbx-button {
+
+	.nattbx__right-col & {
+		width: 150px;
+		margin-top: $s_md;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}

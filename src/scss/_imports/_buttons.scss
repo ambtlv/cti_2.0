@@ -2,10 +2,19 @@
 // ## GLOBAL BUTTONS
 // --------------------------------------------------------------
 
+$button_nattbx_dial_hover: #b4c401 !default;
+
 .slds-button_nattbx-dial {
 	width: 100%;
 	height: 32px;
 	background: $nattbx_green;
 	font-weight: 700;
 	color: $nattbx_hgrey;
+
+	&:hover {
+		background: $button_nattbx_dial_hover;
+		color: $nattbx_white;
+	}
+
+	@include link-transitions;
 }

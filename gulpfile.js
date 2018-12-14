@@ -29,23 +29,7 @@ gulp.task('browserSync', function() {
     server: {
       baseDir: 'src'
       // proxy   : 'http://localhost/YOURDOMAIN' - If your using local as a seve, for example WordPress builds.
-    },
-    // notify: {
-    //   styles: [
-    //   'display: none',
-    //   'z-index: 3',
-    //   'position: fixed',
-    //   'bottom: 0',
-    //   'right: 0',
-    //   'font-family: tahoma',
-    //   'font-size: 14px',
-    //   'text-align: center',
-    //   'color: #eaeaea',
-    //   'margin: 0',
-    //   'padding: 15px',
-    //   'background-color: #333'
-    //   ]
-    // }
+    }
   });
 });
 

@@ -1,0 +1,15 @@
+// --------------------------------------------------------------
+// ## GLOBAL NATTERBOX
+// --------------------------------------------------------------
+
+.nattbx__branding {
+	width: 140px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@include natterbox-brand;
+
+	.nattbx__right-col & {
+		margin-top: $s_lg;
+	}
+}
