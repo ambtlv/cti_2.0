@@ -15,14 +15,12 @@
 		margin-left: auto;
 	}
 }
-
 .slds-form-element__nattbx-search { // modifier
 
 	& .slds-input {
 		height: 32px;
 	}
 }
-
 .slds-form-element__nattbx-button {
 
 	.nattbx__right-col & {
@@ -31,4 +29,18 @@
 		margin-right: auto;
 		margin-left: auto;
 	}
+}
+.slds-form-element__nattbx-select {
+	margin-top: $s_lg;
+
+	label {
+		font-size: 0.90rem;
+		margin-bottom: $s_xs;
+	}
+
+	& .slds-select {
+		height: 32px;
+		cursor: pointer;
+	}
+
 }

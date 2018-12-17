@@ -47,9 +47,33 @@ $nattbx_frame_shadow_col: #a8b7c7 !default;
 	padding-top: $s_sm;
 }
 .nattbx__left-col {
-	padding-right: $s_xl;
+	padding-right: $s_lg;
 }
 .nattbx__right-col {
 	height: 410px;
 	border-left: 1px solid $nattbx_lgrey;
+}
+.nattbx__right-col {
+	.nattbx__webphone-notice {
+		width: 200px;
+		margin-top: $s_md;
+		margin-right: auto;
+		margin-left: auto;
+
+		.nattbx__webphone-notice-text {
+			display: block;
+			text-align: center;
+			text-transform: uppercase;
+
+			a {
+				color: $nattbx_teal;
+				transition: 0.2s ease-in-out;
+
+				&:hover {
+					color: $nattbx_turquoise;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
 }

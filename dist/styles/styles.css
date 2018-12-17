@@ -19208,6 +19208,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: auto;
   margin-left: auto; }
 
+.slds-form-element__nattbx-select {
+  margin-top: 1.25rem; }
+  .slds-form-element__nattbx-select label {
+    font-size: 0.90rem;
+    margin-bottom: 0.5rem; }
+  .slds-form-element__nattbx-select .slds-select {
+    height: 32px;
+    cursor: pointer; }
+
 .nattbx__dialpad {
   width: 160px;
   min-height: 150px;
@@ -19246,21 +19255,124 @@ h1, h2, h3, h4, h5, h6 {
     height: 48px;
     margin-bottom: 4px;
     border-radius: 50px;
-    background: rgba(100, 204, 201, 0.1);
+    background: rgba(100, 204, 201, 0.3);
     font-size: 22px;
     font-weight: 700;
     color: #49535c;
     -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out; }
     .nattbx__dialpad-keypad .dialpad-keypad-digit a:hover {
-      background: #64ccc9;
+      color: white;
+      background: #00a9ce;
       -webkit-box-shadow: 0 -1px 4px 0 #a8b7c7;
               box-shadow: 0 -1px 4px 0 #a8b7c7;
       text-decoration: none; }
 
-.nattbx__utility-menu > svg {
-  width: 24px;
-  height: 24px; }
+.call__log {
+  width: 100%;
+  height: 214px;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #eceaea;
+  border-radius: 4px; }
+
+.call__log-data {
+  height: 169px; }
+
+.call__log-data-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.625rem;
+  border-bottom: 1px solid #eceaea; }
+  .call__log-data-list:last-of-type {
+    border-bottom: 1px solid #f8485e; }
+
+.call__log-views {
+  width: 100%;
+  height: 45px;
+  padding: 1rem;
+  border-top: 1px solid #eceaea; }
+
+.call__log-views-text {
+  text-transform: uppercase;
+  color: #00a9ce; }
+
+.nattbx__utility-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.nattbx__utility-menu {
+  width: 25px; }
+  .nattbx__utility-menu .icon__menu {
+    width: 20px;
+    height: 20px; }
+  .nattbx__utility-menu .icon__menu-line {
+    fill: #5c6770; }
+
+.nattbx__utility-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3.8rem; }
+
+.nattbx__utility-actions-bell {
+  position: relative;
+  width: 18px;
+  height: 18px; }
+  .nattbx__utility-actions-bell .icon__bell-notification {
+    fill: #5c6770; }
+  .nattbx__utility-actions-bell .nattbx__utility-actions-bell-message-count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    color: white;
+    background: #f8485e;
+    font-size: 9px;
+    line-height: 2.5; }
+
+.nattbx__utility-actions-cog {
+  width: 18px;
+  height: 18px; }
+  .nattbx__utility-actions-cog .icon__settings {
+    fill: #5c6770; }
 
 .nattbx__branding {
   width: 140px;
@@ -19376,11 +19488,28 @@ body, html {
   padding-top: 0.625rem; }
 
 .nattbx__left-col {
-  padding-right: 2.5rem; }
+  padding-right: 1.25rem; }
 
 .nattbx__right-col {
   height: 410px;
   border-left: 1px solid #eceaea; }
+
+.nattbx__right-col .nattbx__webphone-notice {
+  width: 200px;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto; }
+  .nattbx__right-col .nattbx__webphone-notice .nattbx__webphone-notice-text {
+    display: block;
+    text-align: center;
+    text-transform: uppercase; }
+    .nattbx__right-col .nattbx__webphone-notice .nattbx__webphone-notice-text a {
+      color: #00a9ce;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
+      .nattbx__right-col .nattbx__webphone-notice .nattbx__webphone-notice-text a:hover {
+        color: #64ccc9;
+        text-decoration: underline; }
 
 .nattbx__component-navigation {
   margin-top: 5rem; }

@@ -1,0 +1,38 @@
+// --------------------------------------------------------------
+// ## CALL LOG COMPONENT
+// --------------------------------------------------------------
+
+.call__log {
+	width: 100%;
+	height: 214px;
+	margin-top: 80px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid $nattbx_lgrey;;
+	border-radius: $border;
+}
+.call__log-data {
+	height: 169px;
+}
+.call__log-data-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: $s_sm;
+	border-bottom: 1px solid $nattbx_lgrey;
+
+	&:last-of-type {
+		border-bottom: 1px solid $nattbx_red;
+	}
+}
+.call__log-views {
+	width: 100%;
+	height: 45px;
+	padding: $s_md;
+	border-top: 1px solid $nattbx_lgrey;
+}
+.call__log-views-text {
+	text-transform: uppercase;
+	color: $nattbx_teal;
+}

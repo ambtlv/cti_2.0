@@ -1,5 +1,5 @@
 // --------------------------------------------------------------
-// ## GLOBAL DIAL PAD
+// ## DIAL PAD COMPONENT
 // --------------------------------------------------------------
 
 $nattbx_frame_shadow_col: #a8b7c7 !default;
@@ -27,12 +27,13 @@ $nattbx_frame_shadow_col: #a8b7c7 !default;
 		height: 48px;
 		margin-bottom: 4px;
 		border-radius: 50px;
-		background: rgba(100,204,201, 0.1);
+		background: rgba(100,204,201, 0.3);
 		font-size: 22px;
 		font-weight: 700;
 		color: $nattbx_hgrey;
 
 		&:hover {
+			color: $nattbx_white;
 			background: $nattbx_teal;
 			box-shadow: 0 -1px 4px 0 $nattbx_frame_shadow_col;
 			text-decoration: none;

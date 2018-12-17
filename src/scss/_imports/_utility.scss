@@ -1,11 +1,59 @@
 // --------------------------------------------------------------
-// ## UITLITY 
+// ## UITLITY
 // --------------------------------------------------------------
 
+.nattbx__utility-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
 .nattbx__utility-menu {
+	width: 25px;
 
-	> svg {
-		width: 24px;
-		height: 24px;
-	} 
+	.icon__menu {
+		width: 20px;
+		height: 20px;
+	}
+	.icon__menu-line{
+		fill: $nattbx_dgrey;
+	}
+}
+.nattbx__utility-actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 3.8rem;
+}
+.nattbx__utility-actions-bell {
+	position: relative;
+	width: 18px;
+	height: 18px;
+
+	.icon__bell-notification {
+		fill: $nattbx_dgrey;
+	}
+
+	.nattbx__utility-actions-bell-message-count {
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+		position: absolute;
+	    top: -7px;
+	    right: -7px;
+	    width: 16px;
+	    height: 16px;
+	    border-radius: 50px;
+	    color: $nattbx_white;
+	    background: $nattbx_red;
+	    font-size: 9px;
+	    line-height: 2.5;
+	}
+}
+.nattbx__utility-actions-cog {
+	width: 18px;
+	height: 18px;
+
+	.icon__settings {
+		fill: $nattbx_dgrey;
+	}
 }
