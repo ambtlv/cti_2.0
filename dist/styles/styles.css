@@ -19268,19 +19268,19 @@ h1, h2, h3, h4, h5, h6 {
               box-shadow: 0 -1px 4px 0 #a8b7c7;
       text-decoration: none; }
 
-.call__log {
+.table {
   width: 100%;
   height: 214px;
-  margin-top: 80px;
+  margin-top: 0.5rem;
   margin-right: auto;
   margin-left: auto;
   border: 1px solid #eceaea;
   border-radius: 4px; }
 
-.call__log-data {
+.table__data {
   height: 169px; }
 
-.call__log-data-list {
+.table__data-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19288,26 +19288,49 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0.625rem;
   border-bottom: 1px solid #eceaea; }
-  .call__log-data-list:last-of-type {
-    border-bottom: 1px solid #f8485e; }
+  .table__data-list:last-of-type {
+    border: 0; }
 
-.call__log-views {
+.table__data-views {
   width: 100%;
   height: 45px;
   padding: 1rem;
   border-top: 1px solid #eceaea; }
 
-.call__log-views-text {
-  text-transform: uppercase;
-  color: #00a9ce; }
+.table__data-views-text {
+  text-transform: uppercase; }
+  .table__data-views-text a {
+    color: #00a9ce;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+    .table__data-views-text a:hover {
+      color: #64ccc9;
+      text-decoration: underline; }
+
+.table__data-list-day,
+.table__data-list-time {
+  width: 30px;
+  text-align: left; }
+
+.table__data-list-name {
+  width: 110px;
+  padding-right: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left; }
+
+.table__data-list-options {
+  width: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #00a9ce;
+  letter-spacing: 1px; }
 
 .nattbx__utility-bar {
   display: -webkit-box;
@@ -19510,6 +19533,11 @@ body, html {
       .nattbx__right-col .nattbx__webphone-notice .nattbx__webphone-notice-text a:hover {
         color: #64ccc9;
         text-decoration: underline; }
+
+.nattbx__cti-titles {
+  display: block;
+  margin-top: 50px;
+  padding-left: 0.625rem; }
 
 .nattbx__component-navigation {
   margin-top: 5rem; }

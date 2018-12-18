@@ -1,0 +1,66 @@
+// --------------------------------------------------------------
+// ## TABLE COMPONENT
+// --------------------------------------------------------------
+
+.table {
+	width: 100%;
+	height: 214px;
+	margin-top: $s_xs;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid $nattbx_lgrey;;
+	border-radius: $border;
+}
+.table__data {
+	height: 169px;
+}
+.table__data-list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: $s_sm;
+	border-bottom: 1px solid $nattbx_lgrey;
+
+	&:last-of-type {
+		border: 0;
+	}
+}
+.table__data-views {
+	width: 100%;
+	height: 45px;
+	padding: $s_md;
+	border-top: 1px solid $nattbx_lgrey;
+}
+.table__data-views-text {
+	text-transform: uppercase;
+
+	a {
+		color: $nattbx_teal;
+		transition: 0.2s ease-in-out;
+
+		&:hover {
+			color: $nattbx_turquoise;
+			text-decoration: underline;
+		}
+	}
+}
+.table__data-list-day,
+.table__data-list-time {
+	width: 30px;
+	text-align: left;
+}
+.table__data-list-name {
+	width: 110px;
+	padding-right: $s_xs;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left;
+}
+.table__data-list-options {
+	width: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: $nattbx_teal;
+    letter-spacing: 1px;
+}
