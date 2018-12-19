@@ -10,6 +10,18 @@
 	margin-left: auto;
 	border: 1px solid $nattbx_lgrey;;
 	border-radius: $border;
+
+	&--search-results {
+		position: absolute;
+		top: 37px;
+		left: -18px;
+	    width: 200px;
+	    height: 254px;
+		border: 0;
+		background: $nattbx_white;
+		box-shadow: 0 2px 4px 0 $nattbx_frame_shadow_col;
+		z-index: 1;
+	}
 }
 .table__data {
 	height: 169px;
@@ -23,6 +35,12 @@
 
 	&:last-of-type {
 		border: 0;
+	}
+
+	.table--search-results & {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 	}
 }
 .table__data-views {
@@ -43,6 +61,11 @@
 			text-decoration: underline;
 		}
 	}
+}
+.table__data-list-day,
+.table__data-list-time,
+.table__data-list-name {
+	font-size: 11px;
 }
 .table__data-list-day,
 .table__data-list-time {
