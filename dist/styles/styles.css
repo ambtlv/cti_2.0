@@ -19318,7 +19318,10 @@ h1, h2, h3, h4, h5, h6 {
             flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: flex-start;
+    font-size: 11px; }
+    .table--search-results .table__data-list:last-of-type {
+      border-bottom: 1px solid #eceaea; }
 
 .table__data-views {
   width: 100%;
@@ -19360,6 +19363,84 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #00a9ce;
   letter-spacing: 1px; }
+
+.table__data-list-pbx-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.table__data-list-pbx-presence {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 0.5rem;
+  border-radius: 50%; }
+  .table__data-list-pbx-presence--red {
+    background: #f8485e; }
+  .table__data-list-pbx-presence--orange {
+    background: #e87722; }
+  .table__data-list-pbx-presence--green {
+    background: #04844b; }
+  .table__data-list-pbx-presence--grey {
+    background: #5c6770; }
+
+.table__data-list-pbx-availability {
+  width: 120px;
+  margin-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left; }
+
+.table__data-list-pbx-user-name,
+.table__data-list-account-name,
+.table__data-list-contact-name {
+  display: inline-block;
+  width: 155px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left; }
+
+.table__data-list-account-numbers,
+.table__data-list-contact-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 155px;
+  margin-left: 26px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left; }
+
+.table__data-list-pbx-ext {
+  color: #00a9ce; }
+  .table__data-list-pbx-ext a {
+    color: #00a9ce;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+    .table__data-list-pbx-ext a:hover {
+      color: #5c6770; }
+
+.table__data-list-account-ext,
+.table__data-list-contact-ext {
+  margin-right: 0.5rem; }
+  .table__data-list-account-ext a,
+  .table__data-list-contact-ext a {
+    color: #00a9ce;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+    .table__data-list-account-ext a:hover,
+    .table__data-list-contact-ext a:hover {
+      color: #5c6770; }
 
 .nattbx__utility-bar {
   display: -webkit-box;

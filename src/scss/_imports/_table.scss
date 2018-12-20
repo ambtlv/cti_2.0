@@ -41,6 +41,11 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		font-size: 11px;
+
+		&:last-of-type {
+			border-bottom: 1px solid $nattbx_lgrey;
+		}
 	}
 }
 .table__data-views {
@@ -54,7 +59,7 @@
 
 	a {
 		color: $nattbx_teal;
-		transition: 0.2s ease-in-out;
+		@include link-transitions;
 
 		&:hover {
 			color: $nattbx_turquoise;
@@ -86,4 +91,82 @@
     font-weight: 700;
     color: $nattbx_teal;
     letter-spacing: 1px;
+}
+.table__data-list-pbx-status {
+	display: flex;
+	align-items: center;
+}
+.table__data-list-pbx-presence{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: $s_xs;
+	border-radius: 50%;
+	
+	&--red {
+		background: $nattbx_red;
+	}
+	&--orange {
+		background: $nattbx_dorange;
+	}
+	&--green {
+		background: $nattbx_dgreen;
+	}
+	&--grey {
+		background: $nattbx_dgrey;
+	}
+}
+.table__data-list-pbx-availability {
+	width: 120px;
+	margin-right: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left;
+}
+.table__data-list-pbx-user-name, 
+.table__data-list-account-name,
+.table__data-list-contact-name {
+	display: inline-block;
+	width: 155px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left;
+}
+.table__data-list-account-numbers,
+.table__data-list-contact-numbers {
+	display: flex;
+	flex-direction: row;
+	width: 155px;
+	margin-left: 26px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left;
+}
+.table__data-list-pbx-ext {
+	color: $nattbx_teal;
+
+	a {
+		color: $nattbx_teal;
+		@include link-transitions;
+
+		&:hover {
+			color: $nattbx_dgrey;
+		}
+	}
+}
+.table__data-list-account-ext,
+.table__data-list-contact-ext {
+	margin-right: $s_xs;
+
+	a {
+		color: $nattbx_teal;
+		@include link-transitions;
+
+		&:hover {
+			color: $nattbx_dgrey;
+		}
+	}
 }
