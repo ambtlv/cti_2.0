@@ -19364,6 +19364,29 @@ h1, h2, h3, h4, h5, h6 {
   color: #00a9ce;
   letter-spacing: 1px; }
 
+.table__data-list-pbx-user,
+.table__data-list-account,
+.table__data-list-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.table__data-list-pbx-user-icon svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  fill: #2e749c; }
+
+.table__data-list-pbx-user-name {
+  padding-left: 6px;
+  font-size: 14px; }
+
 .table__data-list-pbx-status {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19415,7 +19438,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 155px;
-  margin-left: 26px;
+  margin-left: 30px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -19441,6 +19464,21 @@ h1, h2, h3, h4, h5, h6 {
     .table__data-list-account-ext a:hover,
     .table__data-list-contact-ext a:hover {
       color: #5c6770; }
+
+.table__data-list-account-icon svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #2e749c; }
+
+.table__data-list-contact-icon svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #808fde; }
+
+.table__data-list-account-name,
+.table__data-list-contact-name {
+  padding-left: 2px;
+  font-size: 14px; }
 
 .nattbx__utility-bar {
   display: -webkit-box;
