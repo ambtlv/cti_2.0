@@ -38,6 +38,7 @@ $nattbx_frame_shadow_col: #a8b7c7 !default;
 	border-bottom: 2px solid $nattbx_green;
 }
 .slds-panel__body_nattbx {
+	position: relative;
 	width: $global-width-constant-cti;
 	margin: 0 auto;
 	padding: 0;
