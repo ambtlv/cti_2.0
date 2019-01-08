@@ -19529,11 +19529,74 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.table__data-title-display {
+.table__data-display-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 6px;
   padding-bottom: 6px;
-  width: 100%;
-  background: #fc9; }
+  width: 420px;
+  border-bottom: 1px solid #eceaea; }
+  .table__data-display-title .table__data-list-account-name {
+    font-size: 16px;
+    text-align: center;
+    cursor: inherit; }
+
+.table__data-display-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 6px;
+  width: 420px;
+  border-bottom: 1px solid #adb3b7; }
+
+.table__data-list-account-image {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: #eceaea;
+  border-radius: 4px; }
+  .table__data-list-account-image .table__data-list-account-icon {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 18px;
+    height: 16px;
+    background: #00a9ce;
+    border-bottom-left-radius: 4px; }
+  .table__data-list-account-image .table__data-list-account-icon svg {
+    top: 0;
+    left: 1px;
+    width: 15px;
+    height: 15px;
+    fill: white; }
+
+.table__data-details-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .table__data-details-wrap .table__data-list-account-numbers {
+    margin-left: 5px;
+    width: 360px; }
+
+.table__data-display-notes {
+  padding: 1rem;
+  font-size: 11px; }
 
 .nattbx__overlay {
   position: absolute;
@@ -19541,7 +19604,7 @@ h1, h2, h3, h4, h5, h6 {
   left: -15px;
   width: 460px;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 3; }
 
 .nattbx__overlay-message-box {

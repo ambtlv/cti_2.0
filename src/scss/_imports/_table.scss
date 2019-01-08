@@ -252,9 +252,64 @@ $contact_icon_fill: #808fde !default;
 		flex-direction: column;
 	}
 }
-.table__data-title-display {
+.table__data-display-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding-top: 6px;
 	padding-bottom: 6px;
-	width: 100%;
-	background: #fc9;
+	width: 420px;
+	border-bottom: 1px solid $nattbx_lgrey;
+
+	& .table__data-list-account-name {
+		font-size: 16px;
+		text-align: center;
+		cursor: inherit;
+	}
+}
+.table__data-display-details {
+	display: flex;
+	flex-direction: row;
+	padding: 6px;
+	width: 420px;
+	border-bottom: 1px solid $nattbx_mgrey;
+}
+.table__data-list-account-image {
+	position: relative;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	background: $nattbx_lgrey;
+	border-radius: $border;
+
+	& .table__data-list-account-icon {
+		position: absolute;
+		top: 20px;
+		left: 0;
+		width: 18px;
+		height: 16px;
+		background: $nattbx_teal;
+		border-bottom-left-radius: $border;
+	}
+
+	& .table__data-list-account-icon svg {
+		top: 0;
+		left: 1px;
+		width: 15px;
+		height: 15px;
+		fill: $nattbx_white;
+	}
+}
+.table__data-details-wrap {
+	display: flex;
+	flex-direction: column;
+
+	& .table__data-list-account-numbers {
+		margin-left: 5px;
+		width: 360px;
+	}
+}
+.table__data-display-notes {
+	padding: $s_md;
+	font-size: 11px;
 }
