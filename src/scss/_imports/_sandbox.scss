@@ -5,6 +5,10 @@
 .nattbx__component-navigation {
 	margin-top: 5rem;
 }
+.nattbx__section {
+	width: 320px;
+	margin-bottom: $s_lg;
+}
 .nattbx__section h2 {
 	font-size: 2.3rem;
 	font-weight: 700;
@@ -13,7 +17,7 @@
 	text-transform: uppercase;
 }
 .nattbx__home-screen {
-	
+
 	li {
 		font-size: 1.3rem;
 

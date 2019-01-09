@@ -153,6 +153,11 @@ $contact_icon_fill: #808fde !default;
 	text-overflow: ellipsis;
 	text-align: left;
 	cursor: pointer;
+
+	.table__data-details-wrap-names & {
+		width: 110px;
+		margin-right: $s_xs;
+	}
 }
 .table__data-list-account-numbers,
 .table__data-list-contact-numbers {
@@ -252,6 +257,21 @@ $contact_icon_fill: #808fde !default;
 		flex-direction: column;
 	}
 }
+.table__data-display {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 420px;
+	border-bottom: 1px solid $nattbx_lgrey;
+
+	& .table__data-title {
+		font-size: 16px;
+		text-align: center;
+		cursor: inherit;
+	}
+}
 .table__data-display-title {
 	display: flex;
 	justify-content: center;
@@ -307,7 +327,19 @@ $contact_icon_fill: #808fde !default;
 	& .table__data-list-account-numbers {
 		margin-left: 5px;
 		width: 360px;
+
+		li:after {
+			content:" \2022";
+		}
 	}
+}
+.table__data-details-wrap-names {
+	display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.table__data-list-account-company-name {
+	font-size: 11px;
 }
 .table__data-display-notes {
 	padding: $s_md;

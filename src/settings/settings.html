@@ -39,6 +39,36 @@
 	</div>
 
 	<div class="slds-panel__body slds-panel__body_nattbx">
+		<div class="nattbx__overlay">
+			<div class="nattbx__overlay-settings-box">
+
+				<div class="table__data-display">
+					<span class="table__data-title">Settings</span>
+				</div>
+
+				<div class="nattbx__inner-container">
+					<div class="slds-form-element slds-form-element__nattbx-select">
+						<label class="slds-form-element__label" for="select-01">My caller ID</label>
+						<select class="slds-select" id="">
+							<option value="">Some content info here...</option>
+							<option>Not Available</option>
+							<option>Out for Lunch</option>
+							<option>On A Group Call</option>
+						</select>
+					</div>
+
+					<div class="slds-form-element slds-form-element__nattbx-select">
+						<label class="slds-form-element__label" for="select-01">Device to call from</label>
+						<select class="slds-select" id="">
+							<option value="">Some content info here...</option>
+							<option>Not Available</option>
+							<option>Out for Lunch</option>
+							<option>On A Group Call</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="slds-grid slds-wrap">
 			<div class="slds-col slds-size_1-of-2 nattbx__left-col">
 				<div class="nattbx__utility-bar">
@@ -79,7 +109,7 @@
 
 				<div class="slds-form-element slds-form-element__nattbx-select">
 					<label class="slds-form-element__label" for="select-01">Availability</label>
-					<select class="slds-select" id="">
+					<select class="slds-select" id="select-01">
 						<option value="">Ready for calls</option>
 						<option>Not Available</option>
 						<option>Out for Lunch</option>
@@ -158,6 +188,95 @@
 							</svg>
 							<span class="slds-assistive-text">Clear</span>
 						</button>
+					  	</div>
+
+					  	<div class="table table--search-results">
+
+					  		<!-- PBX USER -->
+					  		<ul class="table__data-pbx">
+								<li class="table__data-list">
+									<div class="table__data-list-pbx-user">
+										<span class="table__data-list-pbx-user-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+												<title>PBX User</title>
+					  							<desc>PBC User Vectored</desc>
+												<path d="M46 9H6c-2.7 0-5 2.2-5 5v24c0 2.7 2.3 5 5 5h40c2.8 0 5-2.2 5-5V14c0-2.8-2.2-5-5-5zM24.8 37.2H10.4c-1.6 0-2.8-1.7-2.8-3.4.1-2.5 2.7-4 5.4-5.2 1.9-.8 2.2-1.6 2.2-2.4 0-.8-.5-1.6-1.2-2.2-1.1-1-1.7-2.5-1.7-4.1 0-3.2 1.9-5.8 5.2-5.8s5.2 2.7 5.2 5.8c0 1.7-.6 3.2-1.7 4.1-.7.6-1.2 1.3-1.2 2.2 0 .8.2 1.6 2.2 2.3 2.7 1.2 5.3 2.8 5.4 5.3.3 1.7-1 3.4-2.6 3.4zm19.5-5.8c0 .9-.8 1.7-1.7 1.7h-7.5c-.9 0-1.7-.7-1.7-1.7v-2.5c0-.9.8-1.7 1.7-1.7h7.5c.9 0 1.7.7 1.7 1.7v2.5zm0-9.1c0 .9-.8 1.7-1.7 1.7H30.2c-.9 0-1.7-.7-1.7-1.7v-2.5c0-.9.8-1.7 1.7-1.7h12.5c.9 0 1.7.7 1.7 1.7v2.5z"/>
+											</svg>
+										</span>
+										<span class="table__data-list-pbx-user-name">Bruce Banner</span>
+									</div>
+									<div class="table__data-list-pbx-status">
+										<span class="table__data-list-pbx-presence table__data-list-pbx-presence--green">&nbsp;</span>
+										<span class="table__data-list-pbx-availability">Ready for calls</span>
+										<span class="table__data-list-pbx-ext">Ext:<a href="#">1234</a></span>
+									</div>
+								</li>
+
+								<li class="table__data-list">
+									<div class="table__data-list-pbx-user">
+										<span class="table__data-list-pbx-user-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+												<title>PBX User</title>
+					  							<desc>PBC User Vectored</desc>
+												<path d="M46 9H6c-2.7 0-5 2.2-5 5v24c0 2.7 2.3 5 5 5h40c2.8 0 5-2.2 5-5V14c0-2.8-2.2-5-5-5zM24.8 37.2H10.4c-1.6 0-2.8-1.7-2.8-3.4.1-2.5 2.7-4 5.4-5.2 1.9-.8 2.2-1.6 2.2-2.4 0-.8-.5-1.6-1.2-2.2-1.1-1-1.7-2.5-1.7-4.1 0-3.2 1.9-5.8 5.2-5.8s5.2 2.7 5.2 5.8c0 1.7-.6 3.2-1.7 4.1-.7.6-1.2 1.3-1.2 2.2 0 .8.2 1.6 2.2 2.3 2.7 1.2 5.3 2.8 5.4 5.3.3 1.7-1 3.4-2.6 3.4zm19.5-5.8c0 .9-.8 1.7-1.7 1.7h-7.5c-.9 0-1.7-.7-1.7-1.7v-2.5c0-.9.8-1.7 1.7-1.7h7.5c.9 0 1.7.7 1.7 1.7v2.5zm0-9.1c0 .9-.8 1.7-1.7 1.7H30.2c-.9 0-1.7-.7-1.7-1.7v-2.5c0-.9.8-1.7 1.7-1.7h12.5c.9 0 1.7.7 1.7 1.7v2.5z"/>
+											</svg>
+										</span>
+										<span class="table__data-list-pbx-user-name">Bruce Banner...</span>
+									</div>
+									<div class="table__data-list-pbx-status">
+										<span class="table__data-list-pbx-presence table__data-list-pbx-presence--red">&nbsp;</span>
+										<span class="table__data-list-pbx-availability">Ready for calls</span>
+										<span class="table__data-list-pbx-ext">Ext:<a href="#">5678</a></span>
+									</div>
+								</li>
+							</ul>
+
+							<!-- ACCOUNT USER -->
+							<ul class="table__data-account">
+								<li class="table__data-list">
+									<div class="table__data-list-account">
+										<span class="table__data-list-account-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+												<title>Account User</title>
+					  							<desc>Account User Vectored</desc>
+												<path d="M80 71.2V74c0 3.3-2.7 6-6 6H26c-3.3 0-6-2.7-6-6v-2.8c0-7.3 8.5-11.7 16.5-15.2.3-.1.5-.2.8-.4.6-.3 1.3-.3 1.9.1C42.4 57.8 46.1 59 50 59c3.9 0 7.6-1.2 10.8-3.2.6-.4 1.3-.4 1.9-.1.3.1.5.2.8.4 8 3.4 16.5 7.8 16.5 15.1z"/><ellipse cx="50" cy="36.5" rx="14.9" ry="16.5"/>
+											</svg>
+										</span>
+										<span class="table__data-list-account-name">Bruce Banner</span>
+									</div>
+									<ul class="table__data-list-account-numbers">
+										<li class="table__data-list-account-ext"><a href="#">1234</a></li>
+										<li class="table__data-list-account-ext"><a href="#">0759566642</a></li>
+										<li class="table__data-list-account-ext"><a href="#">02036759876</a></li>
+									</ul>
+								</li>
+							</ul>
+
+							<!-- CONTACT USER -->
+							<ul class="table__data-contact">
+								<li class="table__data-list">
+									<div class="table__data-list-contact">
+										<span class="table__data-list-contact-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+												<title>Contact User</title>
+					  							<desc>Contact User Vectored</desc>
+												<path d="M79 51.1c.1-2.1-1.4-2.7-2-2.7H55.2c-1.9 0-2.2 2-2.2 2.2V74h26V51.1zM64 67.9c0 1.1-.9 2-2 2h-2c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2v2zm0-10.2c0 1.1-.9 2-2 2h-2c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2v2zm10 10.2c0 1.1-.9 2-2 2h-2c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2v2zm0-10.2c0 1.1-.9 2-2 2h-2c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2v2zM59 40.3V28.7c.1-2.1-1.4-2.7-2-2.7H23.2c-1.9 0-2.2 2-2.2 2.2V74h26V44.7s0-2.4 2.2-2.4h7.9s1.9-1.2 1.9-2zM32 66.9c0 1.1-.9 2-2 2h-2c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2v2zm0-10.3c0 1.1-.9 2-2 2h-2c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2v2zm0-10.2c0 1.1-.9 2-2 2h-2c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2v2zm0-10.2c0 1.1-.9 2-2 2h-2c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2v2zm11 30.7c0 1.1-.9 2-2 2h-2c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2v2zm0-10.3c0 1.1-.9 2-2 2h-2c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2v2zm0-10.2c0 1.1-.9 2-2 2h-2c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2v2zm0-10.2c0 1.1-.9 2-2 2h-2c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2v2zm11 0c0 1.1-.9 2-2 2h-2c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2h2c1.1 0 2 .9 2 2v2z"/></svg>
+										</span>
+										<span class="table__data-list-contact-name">Bruce Banner</span>
+									</div>
+									<ul class="table__data-list-contact-numbers">
+										<li class="table__data-list-contact-ext"><a href="#">1234</a></li>
+										<li class="table__data-list-contact-ext"><a href="#">0759566642</a></li>
+									</ul>
+								</li>
+							</ul>
+
+							<div class="nattbx__data-notice">
+								<span class="nattbx__data-notice-text">
+									<a href="#" title="Open Address Book">open address book</a>
+								</span>
+							</div>
+
 					  	</div>
 					</div>
 				</div>

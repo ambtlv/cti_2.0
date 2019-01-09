@@ -26,3 +26,16 @@
 	transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
 }
+.nattbx__overlay-settings-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 12px;
+	width: 420px;
+    height: 390px;
+	border-radius: $border;
+	background: $nattbx_white;
+	color: $nattbx_hgrey;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}

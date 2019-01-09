@@ -19428,6 +19428,11 @@ h1, h2, h3, h4, h5, h6 {
   text-overflow: ellipsis;
   text-align: left;
   cursor: pointer; }
+  .table__data-details-wrap-names .table__data-list-pbx-user-name, .table__data-details-wrap-names
+  .table__data-list-account-name, .table__data-details-wrap-names
+  .table__data-list-contact-name {
+    width: 110px;
+    margin-right: 0.5rem; }
 
 .table__data-list-account-numbers,
 .table__data-list-contact-numbers {
@@ -19529,6 +19534,25 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.table__data-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 420px;
+  border-bottom: 1px solid #eceaea; }
+  .table__data-display .table__data-title {
+    font-size: 16px;
+    text-align: center;
+    cursor: inherit; }
+
 .table__data-display-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19593,6 +19617,23 @@ h1, h2, h3, h4, h5, h6 {
   .table__data-details-wrap .table__data-list-account-numbers {
     margin-left: 5px;
     width: 360px; }
+    .table__data-details-wrap .table__data-list-account-numbers li:after {
+      content: " \2022"; }
+
+.table__data-details-wrap-names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.table__data-list-account-company-name {
+  font-size: 11px; }
 
 .table__data-display-notes {
   padding: 1rem;
@@ -19614,6 +19655,20 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   width: 420px;
   min-height: 140px;
+  border-radius: 4px;
+  background: white;
+  color: #49535c;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+.nattbx__overlay-settings-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+  width: 420px;
+  height: 390px;
   border-radius: 4px;
   background: white;
   color: #49535c;
@@ -19829,8 +19884,15 @@ body, html {
   margin-top: 50px;
   padding-left: 0.625rem; }
 
+.nattbx__inner-container {
+  padding: 1rem; }
+
 .nattbx__component-navigation {
   margin-top: 5rem; }
+
+.nattbx__section {
+  width: 320px;
+  margin-bottom: 1.25rem; }
 
 .nattbx__section h2 {
   font-size: 2.3rem;
