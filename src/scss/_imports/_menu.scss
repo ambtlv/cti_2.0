@@ -1,0 +1,63 @@
+// --------------------------------------------------------------
+// ## MENU COMPONENT
+// --------------------------------------------------------------
+
+$menu_header_bg: #f7f7f7 !default;
+
+.menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 12px;
+	width: 231px;
+    height: 410px;
+	background: $nattbx_white;
+    box-shadow: 4px 0 2px 0 rgba(0,0,0,.16);
+	color: $nattbx_hgrey;
+}
+.menu__header {
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+	padding: $s_md;
+	height: 53px;
+	background: $menu_header_bg;
+}
+.menu__title {
+	font-size: 16px;
+	color: $nattbx_dgrey;
+}
+.menu__close-button {
+	cursor: pointer;
+}
+.menu__close-button svg {
+	width: 24px;
+	height: 24px;
+	fill: $nattbx_mgrey;
+}
+.menu__list {
+	padding-top: $s_xl;
+	padding-right: $s_lg;
+	padding-bottom: $s_md;
+	padding-left: $s_lg;
+}
+.menu__list-links {
+	font-size: 14px;
+
+	a {
+		color: $nattbx_hgrey;
+
+		&:hover {
+			color: $nattbx_green;
+			text-decoration: none;
+		}
+	}
+}
+.menu__list-links {
+	margin-bottom: $s_lg;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}

@@ -4,7 +4,7 @@
 
 $contact_icon_fill: #808fde !default;
 
-// 1. Sits on top of dialpad - For stack order view buildNotes.md
+// 1. Sits on top of dialpad - For stack order view developerNotes.md
 .table {
 	width: 100%;
 	height: 214px;
@@ -92,8 +92,16 @@ $contact_icon_fill: #808fde !default;
 	width: 10px;
     font-size: 12px;
     font-weight: 700;
-    color: $nattbx_teal;
     letter-spacing: 1px;
+
+    a {
+    	color: $nattbx_teal;
+
+    	&:hover {
+    		color: $nattbx_green;
+    		text-decoration: none;
+    	}
+    }
 }
 .table__data-list-pbx-user,
 .table__data-list-account,

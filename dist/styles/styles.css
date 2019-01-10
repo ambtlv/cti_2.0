@@ -19361,8 +19361,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 10px;
   font-size: 12px;
   font-weight: 700;
-  color: #00a9ce;
   letter-spacing: 1px; }
+  .table__data-list-options a {
+    color: #00a9ce; }
+    .table__data-list-options a:hover {
+      color: #c4d600;
+      text-decoration: none; }
 
 .table__data-list-pbx-user,
 .table__data-list-account,
@@ -19647,6 +19651,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 3; }
+  .nattbx__overlay--menu {
+    background: rgba(0, 0, 0, 0.5); }
 
 .nattbx__overlay-message-box {
   position: absolute;
@@ -19675,6 +19681,67 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); }
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  width: 231px;
+  height: 410px;
+  background: white;
+  -webkit-box-shadow: 4px 0 2px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 4px 0 2px 0 rgba(0, 0, 0, 0.16);
+  color: #49535c; }
+
+.menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  height: 53px;
+  background: #f7f7f7; }
+
+.menu__title {
+  font-size: 16px;
+  color: #5c6770; }
+
+.menu__close-button {
+  cursor: pointer; }
+
+.menu__close-button svg {
+  width: 24px;
+  height: 24px;
+  fill: #adb3b7; }
+
+.menu__list {
+  padding-top: 2.5rem;
+  padding-right: 1.25rem;
+  padding-bottom: 1rem;
+  padding-left: 1.25rem; }
+
+.menu__list-links {
+  font-size: 14px; }
+  .menu__list-links a {
+    color: #49535c; }
+    .menu__list-links a:hover {
+      color: #c4d600;
+      text-decoration: none; }
+
+.menu__list-links {
+  margin-bottom: 1.25rem; }
+  .menu__list-links:last-of-type {
+    margin-bottom: 0; }
 
 .nattbx__utility-bar {
   display: -webkit-box;

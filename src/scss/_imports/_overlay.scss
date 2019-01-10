@@ -2,7 +2,7 @@
 // ## OVERLAY COMPONENT
 // --------------------------------------------------------------
 
-//3. Stack order top of the entire cti frame - For stack order view buildNotes.md
+// 3. Stack order top of the entire cti frame - For stack order view developerNotes.md
 .nattbx__overlay {
 	position: absolute;
 	// display: none;
@@ -11,7 +11,11 @@
     width: 460px;
     height: 100%;
 	background: rgba(0,0,0, 0.6);
-	z-index: 3; //3.
+	z-index: 3; // 3.
+
+	&--menu {
+		background: rgba(0,0,0, 0.5);
+	}
 }
 .nattbx__overlay-message-box {
 	position: absolute;
