@@ -43,3 +43,50 @@
 	transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
 }
+.nattbx__overlay-dialing-box {
+	position: absolute;
+	top: 38%;
+	left: 50%;
+	font-size: 12px;
+	width: 420px;
+    height: 280px;
+	border-radius: $border;
+	background: $nattbx_white;
+	color: $nattbx_hgrey;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+.nattbx__overlay-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 420px;
+	border-bottom: 1px solid $nattbx_lgrey;
+
+	& .nattbx__overlay-header-title {
+		font-size: 16px;
+		text-align: center;
+		cursor: inherit;
+	}
+
+	&--actions {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		padding-right: $s_md;
+		padding-left: $s_md;
+	}
+}
+.nattbx__overlay-header-cancel-action {
+	text-transform: uppercase;
+}
+.nattbx__overlay-call-actions {
+	width: 460px;
+	height: 80px;
+	background: #f7f7f7;
+	position: absolute;
+	bottom: 0;
+}

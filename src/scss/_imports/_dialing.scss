@@ -1,0 +1,46 @@
+// --------------------------------------------------------------
+// ## DIALING COMPONENT
+// --------------------------------------------------------------
+
+.dialing {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.dialing__caller-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 48px;
+	height: 48px;
+	margin-top: 30px;
+	font-size: 16px;
+	margin-bottom: $s_md;
+	background: $nattbx_dorange;
+	border-radius: $border;
+	color: $nattbx_white;
+
+	& .dialing__caller-first-initial-upper {
+		text-transform: uppercase;
+	}
+
+	& .dialing__caller-first-initial-lower {
+		text-transform: lowercase;
+	}
+}
+.dialing__caller-name {
+	font-size: 18px;
+	color: $nattbx_dgrey;
+}
+.dialing__caller-id {
+	font-size: 14px;
+	color: $nattbx_mgrey;
+	margin-bottom: $s_xs;
+}
+.dialing__status-text {
+	margin-top: $s_xl;
+	text-transform: uppercase;
+	color: $nattbx_green;
+	letter-spacing: 1px;
+}
