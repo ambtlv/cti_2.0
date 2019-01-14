@@ -2,6 +2,8 @@
 // ## OVERLAY COMPONENT
 // --------------------------------------------------------------
 
+$call_actions_bg: #f7f7f7 !default;
+
 // 3. Stack order top of the entire cti frame - For stack order view developerNotes.md
 .nattbx__overlay {
 	position: absolute;
@@ -86,7 +88,7 @@
 .nattbx__overlay-call-actions {
 	width: 460px;
 	height: 80px;
-	background: #f7f7f7;
+	background: $call_actions_bg;
 	position: absolute;
 	bottom: 0;
 }
@@ -105,9 +107,9 @@
 	li {
 		width: 40px;
 		height: 40px;
-		margin-right: 10px;
+		margin-right: $s_md;
 		border-radius: 50%;
-		background: $nattbx_lorange;
+		// background: $nattbx_lorange;
 
 		&:last-of-type {
 			margin-right: 0;

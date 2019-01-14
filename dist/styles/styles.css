@@ -19323,11 +19323,57 @@ h1, h2, h3, h4, h5, h6 {
   color: #c4d600;
   letter-spacing: 1px; }
 
-.call {
+.nattbx__actions-on-call--phone,
+.nattbx__actions-on-call--phone-hand,
+.nattbx__actions-on-call--conf-call,
+.nattbx__actions-on-call--record-call,
+.nattbx__actions-on-call--mute-call,
+.nattbx__actions-on-call--dial-pad {
   width: 48px;
   height: 48px;
-  border-radius: 50%;
+  border-radius: 50%; }
+
+.nattbx__actions-on-call--phone {
   background: #f8485e; }
+  .nattbx__actions-on-call--phone svg {
+    fill: white; }
+    .nattbx__actions-on-call--phone svg:hover {
+      fill: #000; }
+
+.nattbx__actions-on-call--phone-hand {
+  background: #ffc72c; }
+  .nattbx__actions-on-call--phone-hand svg {
+    fill: white; }
+    .nattbx__actions-on-call--phone-hand svg:hover {
+      fill: #000; }
+
+.nattbx__actions-on-call--conf-call {
+  background: #00a9ce; }
+  .nattbx__actions-on-call--conf-call svg {
+    fill: white; }
+    .nattbx__actions-on-call--conf-call svg:hover {
+      fill: #000; }
+
+.nattbx__actions-on-call--record-call {
+  background: #b4458d; }
+  .nattbx__actions-on-call--record-call svg {
+    fill: white; }
+    .nattbx__actions-on-call--record-call svg:hover {
+      fill: #000; }
+
+.nattbx__actions-on-call--mute-call {
+  background: #e87722; }
+  .nattbx__actions-on-call--mute-call svg {
+    fill: white; }
+    .nattbx__actions-on-call--mute-call svg:hover {
+      fill: #000; }
+
+.nattbx__actions-on-call--dial-pad {
+  background: #49535c; }
+  .nattbx__actions-on-call--dial-pad svg {
+    fill: white; }
+    .nattbx__actions-on-call--dial-pad svg:hover {
+      fill: #000; }
 
 .table {
   width: 100%;
@@ -19830,9 +19876,8 @@ h1, h2, h3, h4, h5, h6 {
   .nattbx__actions-on-call-list li {
     width: 40px;
     height: 40px;
-    margin-right: 10px;
-    border-radius: 50%;
-    background: #ffc72c; }
+    margin-right: 1rem;
+    border-radius: 50%; }
     .nattbx__actions-on-call-list li:last-of-type {
       margin-right: 0; }
 

@@ -1,10 +1,82 @@
 // --------------------------------------------------------------
-// ## CALL ACTIONS 
+// ## CALL ACTIONS
 // --------------------------------------------------------------
 
-.call {
+$phone_call_icon_fill: #000;
+
+.nattbx__actions-on-call--phone,
+.nattbx__actions-on-call--phone-hand,
+.nattbx__actions-on-call--conf-call,
+.nattbx__actions-on-call--record-call,
+.nattbx__actions-on-call--mute-call,
+.nattbx__actions-on-call--dial-pad {
 	width: 48px;
 	height: 48px;
 	border-radius: 50%;
+}
+.nattbx__actions-on-call--phone {
 	background: $nattbx_red;
+
+	svg {
+		fill: $nattbx_white;
+
+		&:hover {
+			fill: $phone_call_icon_fill;
+		}
+	}
+}
+.nattbx__actions-on-call--phone-hand {
+	background: $nattbx_lorange;
+
+	svg {
+		fill: $nattbx_white;
+
+		&:hover {
+			fill: $phone_call_icon_fill;
+		}
+	}
+}
+.nattbx__actions-on-call--conf-call {
+	background: $nattbx_teal;
+
+	svg {
+		fill: $nattbx_white;
+
+		&:hover {
+			fill: $phone_call_icon_fill;
+		}
+	}
+}
+.nattbx__actions-on-call--record-call {
+	background: $nattbx_magenta;
+
+	svg {
+		fill: $nattbx_white;
+
+		&:hover {
+			fill: $phone_call_icon_fill;
+		}
+	}
+}
+.nattbx__actions-on-call--mute-call {
+	background: $nattbx_dorange;
+
+	svg {
+		fill: $nattbx_white;
+
+		&:hover {
+			fill: $phone_call_icon_fill;
+		}
+	}
+}
+.nattbx__actions-on-call--dial-pad {
+	background: $nattbx_hgrey;
+
+	svg {
+		fill: $nattbx_white;
+
+		&:hover {
+			fill: $phone_call_icon_fill;
+		}
+	}
 }
