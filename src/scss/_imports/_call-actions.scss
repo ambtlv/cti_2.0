@@ -19,10 +19,6 @@ $phone_call_icon_fill: #000;
 
 	svg {
 		fill: $nattbx_white;
-
-		&:hover {
-			fill: $phone_call_icon_fill;
-		}
 	}
 }
 .nattbx__actions-on-call--phone-hand {
@@ -30,32 +26,20 @@ $phone_call_icon_fill: #000;
 
 	svg {
 		fill: $nattbx_white;
-
-		&:hover {
-			fill: $phone_call_icon_fill;
-		}
 	}
 }
 .nattbx__actions-on-call--conf-call {
-	background: $nattbx_teal;
+	background: $nattbx_turquoise;
 
 	svg {
 		fill: $nattbx_white;
-
-		&:hover {
-			fill: $phone_call_icon_fill;
-		}
 	}
 }
 .nattbx__actions-on-call--record-call {
-	background: $nattbx_magenta;
+	// background: $nattbx_magenta;
 
 	svg {
 		fill: $nattbx_white;
-
-		&:hover {
-			fill: $phone_call_icon_fill;
-		}
 	}
 }
 .nattbx__actions-on-call--mute-call {
@@ -63,20 +47,15 @@ $phone_call_icon_fill: #000;
 
 	svg {
 		fill: $nattbx_white;
-
-		&:hover {
-			fill: $phone_call_icon_fill;
-		}
 	}
 }
 .nattbx__actions-on-call--dial-pad {
 	background: $nattbx_hgrey;
 
 	svg {
+		position: relative;
+	    top:7px;
+	    right: -7px;
 		fill: $nattbx_white;
-
-		&:hover {
-			fill: $phone_call_icon_fill;
-		}
 	}
 }
