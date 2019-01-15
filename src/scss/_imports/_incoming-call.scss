@@ -1,0 +1,74 @@
+// --------------------------------------------------------------
+// ## OVERLAY COMPONENT
+// --------------------------------------------------------------
+
+$call_actions_bg: #f7f7f7 !default;
+
+// 3. Stack order top of the entire cti frame - For stack order view developerNotes.md
+.incoming__call {
+	position: absolute;
+	top: 0;
+    left: -15px;
+    width: 460px;
+    height: 152px;
+	background-image:url('/assets/images/cti-incoming-call.png');
+	background-position: center center;
+	background-size: cover;
+	z-index: 3; // 3.
+
+	.table__data-display-details {
+		align-items: center;
+		width: 320px;
+		margin-left: 30px;
+		padding: 0;
+		border-bottom: 0;
+	}
+	.table__data-details-wrap {
+		width: 285px;
+	}
+	.table__data-list-account-numbers {
+		width: 285px;
+	}
+	.table__data-list-account-image {
+		width: 32px;
+		height: 32px;
+		background: $nattbx_turquoise;
+
+		& .table__data-list-account-icon {
+		position: absolute;
+		top: 16px;
+		left: 0;
+		width: 18px;
+		height: 16px;
+		background: $nattbx_teal;
+	}
+
+	& .table__data-list-account-icon svg {
+		top: 0;
+		left: 1px;
+		width: 15px;
+		height: 15px;
+		fill: $nattbx_white;
+	}
+	}
+}
+.incoming__call-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 450px;
+	margin-top: $s_lg;
+	margin-right: auto;
+	margin-left: auto;
+	// background: #000;
+}
+.incoming__call-actions {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 90px;
+	padding-right: 10px;
+	// background: #fc9;
+}
