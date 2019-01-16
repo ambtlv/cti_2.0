@@ -19946,6 +19946,28 @@ h1, h2, h3, h4, h5, h6 {
   width: 90px;
   padding-right: 10px; }
 
+.incoming__call-actions-accept {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #04844b;
+  -webkit-transform: rotate(-125deg);
+          transform: rotate(-125deg); }
+  .incoming__call-actions-accept svg {
+    width: 36px;
+    height: 36px;
+    fill: white; }
+
+.incoming__call-actions-reject {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f8485e; }
+  .incoming__call-actions-reject svg {
+    width: 36px;
+    height: 36px;
+    fill: white; }
+
 .menu {
   position: absolute;
   top: 0;
