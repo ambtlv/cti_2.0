@@ -19892,6 +19892,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 285px; }
   .incoming__call .table__data-list-account-numbers {
     width: 285px; }
+    .incoming__call .table__data-list-account-numbers li {
+      margin-right: 0.5rem; }
+      .incoming__call .table__data-list-account-numbers li:after {
+        content: ""; }
   .incoming__call .table__data-list-account-image {
     width: 32px;
     height: 32px;
@@ -19903,12 +19907,12 @@ h1, h2, h3, h4, h5, h6 {
       width: 18px;
       height: 16px;
       background: #00a9ce; }
-    .incoming__call .table__data-list-account-image .table__data-list-account-icon svg {
-      top: 0;
-      left: 1px;
-      width: 15px;
-      height: 15px;
-      fill: white; }
+  .incoming__call .table__data-list-account-icon svg {
+    top: 0;
+    left: 1px;
+    width: 15px;
+    height: 15px;
+    fill: white; }
 
 .incoming__call-container {
   display: -webkit-box;
@@ -19924,7 +19928,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
+  width: 434px;
   margin-top: 1.25rem;
   margin-right: auto;
   margin-left: auto; }
@@ -19951,8 +19955,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 36px;
   border-radius: 50%;
   background: #04844b;
-  -webkit-transform: rotate(-125deg);
-          transform: rotate(-125deg); }
+  -webkit-transform: rotate(-134deg);
+          transform: rotate(-134deg); }
   .incoming__call-actions-accept svg {
     width: 36px;
     height: 36px;
@@ -19967,6 +19971,15 @@ h1, h2, h3, h4, h5, h6 {
     width: 36px;
     height: 36px;
     fill: white; }
+
+.incoming__call-information {
+  width: 370px;
+  margin-top: 26px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.incoming__call-information-text {
+  font-size: 10.5px; }
 
 .menu {
   position: absolute;

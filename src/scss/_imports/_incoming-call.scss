@@ -28,6 +28,14 @@ $call_actions_bg: #f7f7f7 !default;
 	}
 	.table__data-list-account-numbers {
 		width: 285px;
+
+		li {
+			margin-right: $s_xs;
+
+			&:after {
+				content:"";
+			}
+		}
 	}
 	.table__data-list-account-image {
 		width: 32px;
@@ -35,12 +43,13 @@ $call_actions_bg: #f7f7f7 !default;
 		background: $nattbx_turquoise;
 
 		& .table__data-list-account-icon {
-		position: absolute;
-		top: 16px;
-		left: 0;
-		width: 18px;
-		height: 16px;
-		background: $nattbx_teal;
+			position: absolute;
+			top: 16px;
+			left: 0;
+			width: 18px;
+			height: 16px;
+			background: $nattbx_teal;
+		}
 	}
 
 	& .table__data-list-account-icon svg {
@@ -50,14 +59,13 @@ $call_actions_bg: #f7f7f7 !default;
 		height: 15px;
 		fill: $nattbx_white;
 	}
-	}
 }
 .incoming__call-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	width: 450px;
+	width: 434px;
 	margin-top: $s_lg;
 	margin-right: auto;
 	margin-left: auto;
@@ -75,14 +83,14 @@ $call_actions_bg: #f7f7f7 !default;
 	height: 36px;
 	border-radius: 50%;
 	background: $nattbx_dgreen;
-	transform: rotate(-125deg);
+	transform: rotate(-134deg);
 
 	svg {
 		width: 36px;
 		height: 36px;
 		fill: $nattbx_white;
 	}
-} 
+}
 .incoming__call-actions-reject {
 	width: 36px;
 	height: 36px;
@@ -94,4 +102,13 @@ $call_actions_bg: #f7f7f7 !default;
 		height: 36px;
 		fill: $nattbx_white;
 	}
+}
+.incoming__call-information {
+	width: 370px;
+	margin-top: 26px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.incoming__call-information-text {
+	font-size: 10.5px;
 }
