@@ -20032,13 +20032,16 @@ h1, h2, h3, h4, h5, h6 {
 .menu__list-links {
   font-size: 14px; }
   .menu__list-links a {
+    width: 100%;
     color: #49535c; }
     .menu__list-links a:hover {
+      width: 100%;
       color: #c4d600;
-      text-decoration: none; }
+      text-decoration: none;
+      background: #eaeaea; }
 
 .menu__list-links {
-  margin-bottom: 1.25rem; }
+  margin-bottom: 1rem; }
   .menu__list-links:last-of-type {
     margin-bottom: 0; }
 

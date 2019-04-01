@@ -45,17 +45,20 @@ $menu_header_bg: #f7f7f7 !default;
 .menu__list-links {
 	font-size: 14px;
 
-	a {
+	a  {
+		width: 100%;
 		color: $nattbx_hgrey;
 
 		&:hover {
+			width: 100%;
 			color: $nattbx_green;
 			text-decoration: none;
+			background: #eaeaea;
 		}
 	}
 }
 .menu__list-links {
-	margin-bottom: $s_lg;
+	margin-bottom: $s_md;
 
 	&:last-of-type {
 		margin-bottom: 0;
