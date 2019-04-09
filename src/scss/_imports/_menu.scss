@@ -3,6 +3,7 @@
 // --------------------------------------------------------------
 
 $menu_header_bg: #f7f7f7 !default;
+$menu_hover_bg:  #f7f7f7 !default;
 
 .menu {
 	position: absolute;
@@ -37,28 +38,30 @@ $menu_header_bg: #f7f7f7 !default;
 	fill: $nattbx_mgrey;
 }
 .menu__list {
-	padding-top: $s_xl;
-	padding-right: $s_lg;
+	padding-top: $s_md;
 	padding-bottom: $s_md;
-	padding-left: $s_lg;
 }
-.menu__list-links {
+a .menu__list-links {
+	@include link-transitions;
+	width: 100%;
+	padding: $s_xs;
 	font-size: 14px;
+	color: $nattbx_hgrey;
+	text-decoration: none;
 
-	a  {
-		width: 100%;
+	&:hover {
+		text-decoration: none;
 		color: $nattbx_hgrey;
-
-		&:hover {
-			width: 100%;
-			color: $nattbx_green;
-			text-decoration: none;
-			background: #eaeaea;
-		}
+		background: $menu_hover_bg;
+	}
+}
+.menu__list-container a {
+	&:hover {
+		text-decoration: none;
 	}
 }
 .menu__list-links {
-	margin-bottom: $s_md;
+	margin-bottom: $s_lg;
 
 	&:last-of-type {
 		margin-bottom: 0;

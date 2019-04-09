@@ -6,6 +6,7 @@ $phone_call_icon_fill: #000;
 
 .nattbx__actions-on-call--phone,
 .nattbx__actions-on-call--phone-hand,
+.nattbx__actions-on-call--phone-no-hand,
 .nattbx__actions-on-call--conf-call,
 .nattbx__actions-on-call--record-call,
 .nattbx__actions-on-call--mute-call,
@@ -23,6 +24,13 @@ $phone_call_icon_fill: #000;
 }
 .nattbx__actions-on-call--phone-hand {
 	background: $nattbx_lorange;
+
+	svg {
+		fill: $nattbx_white;
+	}
+}
+.nattbx__actions-on-call--phone-no-hand {
+	background: $nattbx_mgrey;
 
 	svg {
 		fill: $nattbx_white;
