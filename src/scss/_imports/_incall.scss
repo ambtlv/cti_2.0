@@ -25,3 +25,9 @@ $overlay-call-actions_shadow_col: #cccccc !default;
 		background: $call_actions_bg;
 	}
 }
+
+.nattbx__in-call-top-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
