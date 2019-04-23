@@ -43,6 +43,18 @@ $nattbx_frame_shadow_col: #a8b7c7 !default;
 	margin: 0 auto;
 	padding: 0;
 }
+.slds-panel__body_nattbx--incall {
+	width: 100%;
+	margin: 0;
+
+	& .nattbx__overlay-call-actions-container {
+		left: 0;
+	}
+}
+.slds-show--incall {
+	display: flex;
+	width: 98%;
+}
 .nattbx__left-col,
 .nattbx__right-col {
 	padding-top: $s_sm;
@@ -53,6 +65,19 @@ $nattbx_frame_shadow_col: #a8b7c7 !default;
 .nattbx__right-col {
 	height: 410px;
 	border-left: 1px solid $nattbx_lgrey;
+}
+.nattbx__right-col--incall {
+	height: 340px;
+	padding: 10px;
+	border-left: 1px solid $nattbx_lgrey;
+	overflow: scroll;
+}
+.nattbx__right-col--incall::-webkit-scrollbar {
+    width: 6px;
+}
+.nattbx__right-col--incall::-webkit-scrollbar-thumb {
+  background-color: $nattbx_mgrey;
+  border-radius: 10px;
 }
 .nattbx__right-col {
 	.nattbx__webphone-notice {

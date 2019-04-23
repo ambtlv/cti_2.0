@@ -38,7 +38,7 @@
 	</button>
 	</div>
 
-	<div class="slds-panel__body slds-panel__body_nattbx">
+	<div class="slds-panel__body slds-panel__body_nattbx slds-panel__body_nattbx--incall">
 		<div class="nattbx__overlay-call-actions-container">
 			<div class="nattbx__overlay-call-actions">
 				<div class="nattbx__actions-call">
@@ -154,46 +154,61 @@
 			</div>
 		</div>
 
-		<div class="slds-grid slds-wrap">
+		<div class="nattbx__col-container">
+			<div class="nattbx__utility-bar">
+				<div class="nattbx__utility-menu">
+					<a href="#" title="Menu">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<g fill="none" fill-rule="evenodd">
+						<path d="M0 0h24v24H0z" class="icon__menu"/>
+						<rect width="16" height="2" x="4" y="5" class="icon__menu-line" rx="1"/>
+						<rect width="16" height="2" x="4" y="11" class="icon__menu-line" rx="1"/>
+						<rect width="16" height="2" x="4" y="17" class="icon__menu-line" rx="1"/>
+						</g>
+					</svg>
+					</a>
+				</div><!-- end of .nattbx__utility-menu -->
 
+				<div class="slds-tabs_default">
+					<ul class="slds-tabs_default__nav" role="tablist">
+						<li class="slds-tabs_default__item slds-is-active" title="Item One" role="presentation">
+							<a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1" id="tab-default-1__item">Item One</a>
+						</li>
+						<li class="slds-tabs_default__item" title="Item Two" role="presentation">
+							<a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2" id="tab-default-2__item">Item Two</a>
+						</li>
+						<li class="slds-tabs_default__item" title="Item Three" role="presentation">
+							<a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-3" id="tab-default-3__item">Item Three</a>
+						</li>
+					</ul>
+					<div id="tab-default-1" class="slds-tabs_default__content slds-show slds-show--incall " role="tabpanel" aria-labelledby="tab-default-1__item">
 
-			<div class="nattbx__in-call-top-container">
-				
-				<div class="nattbx__utility-bar">
-					<div class="nattbx__utility-menu">
-						<a href="#" title="Menu">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-							<g fill="none" fill-rule="evenodd">
-							<path d="M0 0h24v24H0z" class="icon__menu"/>
-							<rect width="16" height="2" x="4" y="5" class="icon__menu-line" rx="1"/>
-							<rect width="16" height="2" x="4" y="11" class="icon__menu-line" rx="1"/>
-							<rect width="16" height="2" x="4" y="17" class="icon__menu-line" rx="1"/>
-							</g>
-						</svg>
-						</a>
+						<div class="slds-col slds-size_1-of-2 nattbx__left-col">
+							left hand side
+						</div>
+
+						<div class="slds-col slds-size_1-of-2 nattbx__right-col--incall">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia iste aut cumque tempore libero tenetur
+							dolores ullam sapiente neque? Enim, delectus laborum recusandae earum repudiandae vel laudantium 
+							dignissimos exercitationem a, sequi quaerat, eveniet nesciunt rem iure nemo! Ipsa inventore rem alias
+							beatae rerum numquam, autem reiciendis aspernatur et facilis obcaecati fugit praesentium animi error dicta
+							ab soluta quaerat expedita recusandae nemo ea quas saepe. Ipsa adipisci voluptatem enim, illum labore deserunt
+							itaque est vel assumenda nemo sint quo quisquam voluptatibus numquam recusandae rem iusto cum. Doloribus a
+							voluptatum distinctio quam nostrum dolore, dignissimos qui laboriosam ea quas id omnis, nemo voluptatem unde
+							ipsum dolorem repellat optio delectus at? Ut facere eligendi natus cumque doloremque facilis, rem fuga
+							quibusdam soluta voluptas? Recusandae earum, ut harum laborum totam nobis nemo autem iure necessitatibus esse
+							culpa minus! Suscipit temporibus nobis cupiditate maxime ipsam ratione dolorem nisi. Magnam, eaque ducimus?
+							Provident quo quod cumque magni eveniet amet, incidunt voluptates sunt illo error similique ipsum exercitationem
+							doloribus tempore eum deleniti sint animi id architecto delectus modi quaerat aliquam eius! Numquam perspiciatis
+							nemo soluta quia sequi, repellat eligendi vitae doloribus obcaecati blanditiis minus eveniet possimus reprehenderit
+							ab ea, fugit sit corrupti exercitationem tenetur nisi! Officiis, amet!
+						</div>
+
 					</div>
-				</div>
-
-				<div class="">
-					top tab section
-				</div>
-
-			</div>
-
-
-			</div>
-			<div class="slds-col slds-size_1-of-2 nattbx__left-col">
-				
-
-				left hand side
-
-			</div>
-
-			<div class="slds-col slds-size_1-of-2 nattbx__right-col">
-
-				right hand side
-			</div>
-			</div>
+					<div id="tab-default-2" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">Item Two Content</div>
+					<div id="tab-default-3" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-3__item">Item Three Content</div>
+				</div><!-- end of .slds-tabs_default -->
+			</div><!-- enf of nattbx__utility-bar -->
 		</div>
 	</div>
 </div>
